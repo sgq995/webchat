@@ -1,0 +1,284 @@
+/*
+ * Parametros globales
+ */
+* {
+	box-sizing: border-box;
+}
+ 
+html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	margin: 0;
+}
+
+input,
+button {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/*
+ * Formularios
+ */
+.frm {
+	display: block;
+	font-size: 14px;
+}
+ 
+.inpt {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	padding: 6px 12px;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+
+.inpt-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+}
+
+.inpt-group-btn {
+	width: 1%;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.inpt-group-btn,
+.inpt-group .inpt {
+	display: table-cell;
+}
+
+/*
+ * Botones
+ */
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-image: none;
+	border: 1px solid transparent;
+}
+
+.btn:focus {
+	outline: thin dotted;
+}
+
+.btn:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.btn.disabled {
+	cursor: not-allowed;
+}
+
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.btn-default:focus {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #8c8c8c;
+}
+
+.btn-default:hover {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+/*
+ * Columnas
+ */
+.row::before,
+.row::after {
+	display: table;
+	content: " ";
+}
+
+
+.row::after {
+	clear: both;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+	float: left;
+}
+
+.col-xs-1 {
+	width: 8.33%;
+}
+
+.col-xs-2 {
+	width: 16.66%;
+}
+
+.col-xs-3 {
+	width: 25%;
+}
+
+.col-xs-4 {
+	width: 33.33%;
+}
+
+.col-xs-5 {
+	width: 41.66%;
+}
+
+.col-xs-6 {
+	width: 50%;
+}
+
+.col-xs-7 {
+	width: 58.33%;
+}
+
+.col-xs-8 {
+	width: 66.66%;
+}
+
+.col-xs-9 {
+	width: 75%;
+}
+
+.col-xs-10 {
+	width: 91.66%;
+}
+
+.col-xs-11 {
+	width: 91.66%;
+}
+
+.col-xs-12 {
+	width: 100%;
+}
+
+@media (min-width: 728px) {
+	.col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-10,
+	.col-sm-11,
+	.col-sm-12 {
+		float: left;
+	}
+	
+	.col-sm-1 {
+		width: 8.33%;
+	}
+
+	.col-sm-2 {
+		width: 16.66%;
+	}
+
+	.col-sm-3 {
+		width: 25%;
+	}
+
+	.col-sm-4 {
+		width: 33.33%;
+	}
+
+	.col-sm-5 {
+		width: 41.66%;
+	}
+
+	.col-sm-6 {
+		width: 50%;
+	}
+
+	.col-sm-7 {
+		width: 58.33%;
+	}
+
+	.col-sm-8 {
+		width: 66.66%;
+	}
+
+	.col-sm-9 {
+		width: 75%;
+	}
+
+	.col-sm-10 {
+		width: 91.66%;
+	}
+
+	.col-sm-11 {
+		width: 91.66%;
+	}
+
+	.col-sm-12 {
+		width: 100%;
+	}
+}
+
+/*
+ * 
+ */
+#chat-div {
+	padding: 6px 12px;
+}
+ 
+#chat-div span {
+	padding-left: 15px;
+}

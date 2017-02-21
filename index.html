@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+<body>
+    <div id="chat" class="row">
+		<div id="chat-div" class="col-xs-12">
+		
+		</div>
+		
+		<form id="chat-form" method="post" action="">
+			<div class="col-xs-12 col-sm-6">
+				<input id="chat-text" class="inpt" type="text" name="chat-text">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<input class="btn btn-default btn-block" type="submit" value="Envíar">
+			</div>
+		</form>
+	</div>
+	
+	<br>
+	
+	<div class="row">
+		<div id="login" class="col-xs-12 col-sm-6">
+			<div id="login-div">
+			
+			</div>
+			
+			<form id="login-form" class="frm" method="post" action="">
+				<label for="login-username">Usuario:</label>
+				<input id="login-username" class="inpt" type="text" name="login-username"> <br>
+				<label for="login-password">Contraseña:</label>
+				<input id="login-password" class="inpt" type="password" name="login-password"> <br>
+				<input class="btn btn-default btn-block" type="submit" value="Entrar">
+			</form>
+		</div>
+		
+		<div id="register" class="col-xs-12 col-sm-6">
+			<div id="register-div">
+			
+			</div>
+			
+			<form id="register-form" method="post" action="">
+				<label for="register-username">Usuario:</label>
+				<input id="register-username" class="inpt" type="text" name="register-username"> <br>
+				<label for="register-password">Contraseña:</label>
+				<input id="register-password" class="inpt" type="password" name="register-password"> <br>
+				<input class="btn btn-default btn-block" type="submit" value="Registrar">
+			</form>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="src/ajax.js"></script>
+	<script type="text/javascript" src="src/powers.js"></script>
+	<script type="text/javascript" src="src/chat.js?"></script>
+</body>
+</html>
