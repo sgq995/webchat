@@ -3,7 +3,7 @@
 // $config = array();
 $config['host'] = "localhost";
 $config['username'] = "root";
-$config['password'] = "Thejoker95";
+$config['password'] = "yourpassword";
 $config['database'] = "webchat";
 
 ?>
